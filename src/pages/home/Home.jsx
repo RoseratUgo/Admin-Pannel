@@ -2,6 +2,9 @@ import "../../../../panneladmin/src/pages/home/home.scss"
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Widget from "../../components/widgets/Widgets"
+import Featured from "../../components/featured/Featured"
+import Charts from "../../components/charts/Charts"
+import Table from "../../components/table/Table"
 
 const Home = () => {
   return (
@@ -14,6 +17,14 @@ const Home = () => {
             <Widget type="order"/>
             <Widget type="earning"/>
             <Widget type="balance"/>
+          </div>
+          <div className="charts">
+            <Featured/>
+            <Charts/>
+          </div>
+          <div className="listContainer">
+            <div className="listTitle">Latest Transactions</div>
+            <Table/>
           </div>
         </div>
     </div>

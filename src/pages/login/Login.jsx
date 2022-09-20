@@ -1,10 +1,8 @@
-import "../../../../panneladmin/src/pages/login/login.scss"
+import "./login.scss"
 
 const Login = () => {
   return (
-    <div className="home">
-        Login
-    </div>
+    <div>Login</div>
   )
 }
 
